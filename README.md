@@ -26,6 +26,11 @@ Este é um sistema simples de cadastro e calculadora em Python, que permite aos 
 - Os usuários podem realizar operações de soma, subtração, multiplicação e divisão.
 - Podem escolher continuar operando ou voltar ao menu principal.
 
+#### Conversor de Unidades Básicas
+- Inclui conversões de peso, tempo, distância e velocidade.
+- Os usuários escolhem o tipo de conversão desejada e fornecem os valores correspondentes.
+- O sistema realiza a conversão e exibe o resultado.
+
 ## Como Executar o Sistema
 
 1. Abra o terminal ou prompt de comando.
@@ -70,6 +75,11 @@ This is a simple user registration and calculator system implemented in Python. 
 #### Basic Calculator
 - Users can perform operations such as addition, subtraction, multiplication, and division.
 - They can choose to continue operating or return to the main menu.
+
+#### Basic Unit Converter
+- Includes conversions for weight, time, distance, and speed.
+- Users choose the desired conversion type and provide the corresponding values.
+- The system performs the conversion and displays the result.
 
 ## How to Run the System
 
