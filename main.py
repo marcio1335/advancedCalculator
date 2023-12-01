@@ -297,64 +297,99 @@ while not autenticado:
                                         resultado6 = num1 / 60
                                         print(f'{num1}s em min =', resultado6)
 
-                                    # Verifica se a escolha do usuário é '4', indicando a opção do conversor de velocidade.
-                                    elif escolha_conversor == '4':
-                                        # Exibe o menu do Conversor de Velocidade.
-                                        print('----- Conversor de Velocidade -----')
-                                        print('1 - Quilômetro/h para metros/s')
-                                        print('2 - Quilômetro/h para pés/s')
-                                        print('3 - Metro/s para quilômetros/h')
-                                        print('4 - Metro/s para pés/s')
-                                        print('5 - Pés/s para quilômetros/h')
-                                        print('6 - Pés/s para metros/s')
-                                        print('0 - Voltar')
-                                    
-                                        # Solicita ao usuário que digite a opção desejada para a conversão de velocidade.
-                                        escolha_velocidade = input('Digite a opção: ')
-                                    
-                                        # Verifica se o usuário deseja voltar ao menu principal.
-                                        if escolha_velocidade == '0':
-                                            continue
-                                    
-                                        # Verifica se a escolha do usuário é válida.
-                                        elif escolha_velocidade in ('1', '2', '3', '4', '5', '6'):
-                                            # Realiza a conversão de velocidade com base na escolha do usuário.
-                                            if escolha_velocidade == '1':
-                                                # Converte quilômetros por hora para metros por segundo.
-                                                num1 = float(input("Digite a velocidade em quilômetros/h que deseja converter: "))
-                                                resultado1 = num1 / 3.6
-                                                print(f'{num1}km/h em m/s =', resultado1)
-                                    
-                                            elif escolha_velocidade == '2':
-                                                # Converte quilômetros por hora para pés por segundo.
-                                                num1 = float(input("Digite a velocidade em quilômetros/h que deseja converter: "))
-                                                resultado2 = num1 / 1.097
-                                                print(f'{num1}km/h em ft/s =', resultado2)
-                                    
-                                            elif escolha_velocidade == '3':
-                                                # Converte metros por segundo para quilômetros por hora.
-                                                num1 = float(input("Digite a velocidade em metros/s que deseja converter: "))
-                                                resultado3 = num1 * 3.6
-                                                print(f'{num1}m/s em km/h =', resultado3)
-                                    
-                                            elif escolha_velocidade == '4':
-                                                # Converte metros por segundo para pés por segundo.
-                                                num1 = float(input("Digite a velocidade em metros/s que deseja converter: "))
-                                                resultado4 = num1 * 3.281
-                                                print(f'{num1}m/s em ft/s =', resultado4)
-                                    
-                                            elif escolha_velocidade == '5':
-                                                # Converte pés por segundo para quilômetros por hora.
-                                                num1 = float(input("Digite a velocidade em pés/s que deseja converter: "))
-                                                resultado5 = num1 * 1.097
-                                                print(f'{num1}ft/s em km/h =', resultado5)
-                                    
-                                            elif escolha_velocidade == '6':
-                                                # Converte pés por segundo para metros por segundo.
-                                                num1 = float(input("Digite a velocidade em pés/s que deseja converter: "))
-                                                resultado6 = num1 / 3.281
-                                                print(f'{num1}ft/s em m/s =', resultado6)
+                            elif escolha_conversor == '3':
+                                print('----- Conversor de Distância -----')
+                                print('1 - Quilômetro para metros')
+                                print('2 - Quilômetro para centímetros')
+                                print('3 - Metro para quilômetros')
+                                print('4 - Metro para centímetros')
+                                print('5 - Centímetros para quilômetros')
+                                print('6 - Centímetros para metros')
+                                print('0 - Voltar')
 
+                                escolha_distancia = input('Digite a opção: ')
+
+                                if escolha_distancia == '0':
+                                    continue
+
+                                elif escolha_distancia in ('1', '2', '3', '4', '5', '6'):
+                                    if escolha_distancia == '1':
+                                        num1 = float(input("Digite a distância em quilômetros que deseja converter: "))
+                                        resultado1 = num1 * 1000
+                                        print(f'{num1}km em m =', resultado1)
+
+                                    elif escolha_distancia == '2':
+                                        num1 = float(input("Digite a distância em quilômetros que deseja converter: "))
+                                        resultado2 = num1 * 100000
+                                        print(f'{num1}km em cm =', resultado2)
+
+                                    elif escolha_distancia == '3':
+                                        num1 = float(input("Digite a distância em metros que deseja converter: "))
+                                        resultado3 = num1 / 1000
+                                        print(f'{num1}m em km =', resultado3)
+
+                                    elif escolha_distancia == '4':
+                                        num1 = float(input("Digite a distância em metros que deseja converter: "))
+                                        resultado4 = num1 * 100
+                                        print(f'{num1}m em cm =', resultado4)
+
+                                    elif escolha_distancia == '5':
+                                        num1 = float(input("Digite a distância em centímetros que deseja converter: "))
+                                        resultado5 = num1 / 100000
+                                        print(f'{num1}cm em km =', resultado5)
+
+                                    elif escolha_distancia == '6':
+                                        num1 = float(input("Digite a distância em centímetros que deseja converter: "))
+                                        resultado6 = num1 / 100
+                                        print(f'{num1}cm em m =', resultado6)
+
+                            elif escolha_conversor == '4':
+                                print('----- Conversor de Velocidade -----')
+                                print('1 - Quilômetro/h para metros/s')
+                                print('2 - Quilômetro/h para pés/s')
+                                print('3 - Metro/s para quilômetros/h')
+                                print('4 - Metro/s para pés/s')
+                                print('5 - Pés/s para quilômetros/h')
+                                print('6 - Pés/s para metros/s')
+                                print('0 - Voltar')
+
+                                escolha_velocidade = input('Digite a opção: ')
+
+                                if escolha_velocidade == '0':
+                                    continue
+
+                                elif escolha_velocidade in ('1', '2', '3', '4', '5', '6'):
+                                    if escolha_velocidade == '1':
+                                        num1 = float(
+                                            input("Digite a velocidade em quilômetros/h que deseja converter: "))
+                                        resultado1 = num1 / 3.6
+                                        print(f'{num1}km/h em m/s =', resultado1)
+
+                                    elif escolha_velocidade == '2':
+                                        num1 = float(
+                                            input("Digite a velocidade em quilômetros/h que deseja converter: "))
+                                        resultado2 = num1 / 1.097
+                                        print(f'{num1}km/h em ft/s =', resultado2)
+
+                                    elif escolha_velocidade == '3':
+                                        num1 = float(input("Digite a velocidade em metros/s que deseja converter: "))
+                                        resultado3 = num1 * 3.6
+                                        print(f'{num1}m/s em km/h =', resultado3)
+
+                                    elif escolha_velocidade == '4':
+                                        num1 = float(input("Digite a velocidade em metros/s que deseja converter: "))
+                                        resultado4 = num1 * 3.281
+                                        print(f'{num1}m/s em ft/s =', resultado4)
+
+                                    elif escolha_velocidade == '5':
+                                        num1 = float(input("Digite a velocidade em pés/s que deseja converter: "))
+                                        resultado5 = num1 * 1.097
+                                        print(f'{num1}ft/s em km/h =', resultado5)
+
+                                    elif escolha_velocidade == '6':
+                                        num1 = float(input("Digite a velocidade em pés/s que deseja converter: "))
+                                        resultado6 = num1 / 3.281
+                                        print(f'{num1}ft/s em m/s =', resultado6)
 
             autenticado = True  # Altera a variável de controle
         else:
